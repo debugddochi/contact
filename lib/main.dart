@@ -13,26 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.blue,
-          title: Text('에스파 윈터'),
+          title: Text('My App'),
         ),
-        body: Container(
-          child: Column(
-            children: [
-              Image.asset('aespa_winter.jpg'),
-              Text('윈터!!!')
-            ],
-          ),
-
-        ),
-        bottomNavigationBar: BottomAppBar(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Icon(Icons.phone),
-              Icon(Icons.message),
-              Icon(Icons.contact_page)
-            ],
+        body: Align(
+          alignment: Alignment.bottomCenter,
+          child: Container(
+            width: double.infinity, height: 50, color: Colors.red,
           ),
         ),
       )
